@@ -7,9 +7,9 @@
 let pointsHome = 0
 let scoreHome = document.getElementById("score-home")
 
-// guest score?
-let pointsGuest = 0
-let scoreGuest = document.getElementById("score-guest")
+// away score?
+let pointsAway = 0
+let scoreAway = document.getElementById("score-away")
 
 // game over?
 let winner = document.getElementById("game-over")
@@ -29,26 +29,26 @@ function homeAddThree() {
   scoreHome.textContent = pointsHome
 }
 
-function guestAddOne() {
-  pointsGuest = pointsGuest + 1
-  scoreGuest.textContent = pointsGuest
+function awayAddOne() {
+  pointsAway = pointsAway + 1
+  scoreAway.textContent = pointsAway
 }
 
-function guestAddTwo() {
-  pointsGuest = pointsGuest + 2
-  scoreGuest.textContent = pointsGuest
+function awayAddTwo() {
+  pointsAway = pointsAway + 2
+  scoreAway.textContent = pointsAway
 }
 
-function guestAddThree() {
-  pointsGuest = pointsGuest + 3
-  scoreGuest.textContent = pointsGuest
+function awayAddThree() {
+  pointsAway = pointsAway + 3
+  scoreAway.textContent = pointsAway
 }
 
 function endGame() {
-    if (pointsHome > pointsGuest) {
+    if (pointsHome > pointsAway) {
         winner.textContent = "Game Over! Home team wins!"
-    } else  if (pointsGuest > pointsHome) {
-        winner.textContent = "Game Over! Guest Team wins!"
+    } else  if (pointsAway > pointsHome) {
+        winner.textContent = "Game Over! Away Team wins!"
     }  else {
         winner.textContent = "Game Over! It's a tie!"  
     }  
@@ -57,7 +57,7 @@ function endGame() {
 function reset() {
   scoreHome.textContent = 0
   pointsHome = 0
-  scoreGuest.textContent = 0
-  pointsGuest = 0
+  scoreAway.textContent = 0
+  pointsAway = 0
   winner.textContent = "" 
 }
