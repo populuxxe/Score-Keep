@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    background-color: #1e0021;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+h3 {
+    color: #F1F1F1;
+    text-align: center;
+    margin: 2px;
+}
+
+h2 {
+    color: #F1F1F1;
+    text-align: center;
+    margin: 16px 0px 4px 0px;
+    font-size: 42px;
+}
+
+.score p {
+    color: #953bff;
+    font-family: 'Cursed Timer ULiL', sans-serif;                                                                               font-weight: 400;
+    font-style: Regular;
+    font-size: 64px;
+    line-height: 112px;
+    text-align: center;
+    margin: 0;
+}
+
+.score {
+    margin: 12px;
+    background-color: #191919;
+    width: 160px;
+    height: 96px;
+    border-radius: 8px;
+}
+
+.add-points-btns {
+    justify-content: center;
+    display: flex;
+    gap: 16px;
+    margin: auto;
+}
+
+.add-points-btns button {
+    background: none;
+    color: #F1F1F1;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 8px 8px;
+    border: 1px solid #f1f1f1;
+    border-radius: 4px;
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    letter-spacing: 2px;
+}
+
+.game-controls {
+    display: flex;
+    gap: 24px;
+}
+
+.game-controls button {
+    background: none;
+    color: #F1F1F1;
+    font-size: 20px;
+    padding: 8px 12px;
+    border: 1px solid #f1f1f1;
+    border-radius: 4px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-top: 48px;
+}
+
+#game-over {
+    font-size: 24px;
+    color: #F1F1F1;
+    text-align: center;
+}
